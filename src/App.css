@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("weather-app.jpg");
+  background-size: cover;
+}
+.slide-in-fwd-center {
+  animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.container {
+  position: absolute;
+  top: 170px;
+  left: 29rem;
+  padding: 20px;
+  width: 300px;
+  height: 250px;
+  background-color: rgba(255, 255, 255, 0.598);
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+h1 {
+  text-shadow: 1px 2px 3px rgba(249, 249, 249, 0.881);
+  position: relative;
+  top: 40px;
+  text-align: center;
+}
+.btn {
+  margin: 24px;
+  font-size: 1.1rem;
+  background-color: #456882;
+  color: #fff;
+  border: none;
+  border-radius: 0.7rem;
+  cursor: pointer;
+}
+.btn:hover {
+  color: #8e8e8e;
+}
+#location h2 {
+  font-size: 1.2rem;
+  text-align: center;
+}
+#Temperature {
+  font-size: 1.1rem;
+  padding-bottom: 30px;
+}
+#city-input {
+  border-radius: 0.7rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  font-size: 1.3rem;
+  margin-top: 24px;
+  text-align: center;
+  color: #333;
+  border: none;
+}
+
+#city-input:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.822);
+}
+.label {
+  font-size: 1.3rem;
+  position: absolute;
+  top: 11px;
+  left: 28px;
+}
+@keyframes slide-in-fwd-center {
+  0% {
+    transform: translateZ(-1400px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+#wind {
+  position: absolute;
+  right: 90px;
+  top: 230px;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+#wind:hover {
+  color: #5f5a5a;
+  cursor: pointer;
+}
